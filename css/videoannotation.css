@@ -1,0 +1,187 @@
+.annotated_video_holder,
+.annotated_video_form_holder  ,
+.annotated_video_form_holder form{
+	font-family: helvetica, arial, verdana, sans-serif; 
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+}
+.annotated_video_holder{
+	display: block;
+	clear: both;
+	margin-bottom: 2em;
+}
+.annotated_video_form_holder{	
+	border: 1px solid #ccc;
+}
+.js_disabled{	
+	padding: 10px;
+	display: block;
+	border: 1px solid #eee; 
+	text-align: center;
+}
+
+
+.loading_msg{
+	
+	display: block;
+	height: 85px;
+	width: 100%;
+	
+	background-image: url('img/loading.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+=
+}
+
+.annotated_video_holder h3#reply-title{	display: none; visibility: hidden;}
+
+.annotated_video_comments_holder{
+	
+
+	background-image: url('img/field_bg.jpg');
+	color: #666;
+
+	font-size: 14px;
+	line-height: 21px;
+	
+	width: 100%;
+	height: 100px;
+	max-height: 100px; /* Otherwise Chrome adds weird bottom margin on overflow element... */
+	
+	
+	overflow-y: auto;
+	overflow-x: hidden;	
+	
+	display: block;
+	clear: both;
+	
+	
+	
+	
+   -moz-box-shadow:inset 0px 0px 4px 4px #ebe8eb;
+	-webkit-box-shadow:inset 0px 0px 4px 4px #ebe8eb;
+	box-shadow:inset 0px 0px 4px 4px #ebe8eb;
+	
+	border: 0px solid #bfbfbf;	
+
+}
+
+
+.annotated_video_holder iframe{
+	margin: 0;
+}
+
+.annotated_video_comments_holder .author{
+	color: black;
+}
+
+.annotated_video_comments_holder .author:after {
+   content:    ": "; 
+   /* display: none; */
+}
+
+.annotated_video_comments_holder .comment_wrapper{
+	margin: .5em 1em 0 1em;
+}
+
+.annotated_video_form_holder textarea,
+.annotated_video_form_holder textarea.readonly{
+	font-size: 14px;
+	color: #666;
+	border: 0px solid #ccc;
+	height: 60px;
+	display: block;
+	float: left;
+	width: 80%;
+	line-height: 1.2em;
+	margin: 0;
+	padding: 0;
+	text-indent: 1em;
+	
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	
+	webkit-box-shadow: inset 2px 1px 2px 1px #dddddd;
+    -moz-box-shadow: inset 2px 1px 2px 1px #dddddd;
+    box-shadow: inset inset 2px 1px 2px 1px #dddddd;
+    
+}
+
+.annotated_video_form_holder textarea.readonly{
+	color: #ccc;
+}
+
+
+.annotated_video_holder .form-submit{
+	width: 20%;
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.annotated_video_holder .comment_pending{
+	display: none;
+}
+
+.annotated_video_holder .annotated_video_credits{
+	font-size: 11px;
+	text-align: right;
+	display: block;
+}
+
+.annotated_video_holder  { /* respond class comes from wp itself */
+	background: #fff;
+	border-radius: 0;
+	border: 0;
+}
+
+.annotated_video_holder input[type='submit'],
+.annotated_video_holder input#submit{
+
+	color: #666;
+	display:inline-block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 60px;
+	left: 0;
+	font-size: 14px;
+	
+	text-decoration:none;
+
+	border: 0;
+	border-left: 1px solid #dcdcdc;
+	text-shadow:1px 1px 0px #ffffff;
+	
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;	
+
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	
+}
+.annotated_video_holder form{ width: 100% !important; }
+.annotated_video_holder form input[type='submit']:hover,
+.annotated_video_holder input#submit:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+
+
+.annotated_video_holder form input[type='submit']:active {
+	position:relative;
+	top:1px;
+}
